@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "moobloom",
+  "version": "${version}",
+
+  "name": "MooBlooms",
+  "description": "Adds Mooblooms to minecraft",
+  "authors": [
+    "Jochem"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.jochem.moobloom.MooBloom"
+    ],
+    "client": [
+      "net.jochem.moobloom.MooBloomClient"
+    ]
+  },
+  "mixins": [
+    "moobloom.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
